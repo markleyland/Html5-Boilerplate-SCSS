@@ -1,5 +1,66 @@
+/*------------------------------------*\
+    $TABLE OF CONTENTS 
+    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
+\*------------------------------------*/
+/**
+ * VARIABLES..............................Declarations of Sass variables 
+ * .....Colors
+ * .....Typography
+ * .....Layout
+ * .....Defaults
+ * .....Breakpoints
+ * MIXINS.................................Sass mixins 
+ * NORMALIZE..................................Set reset defaults
+ * HELPER CLASSES..................................(clearfix, visibility)
+ * GLOBAL ELEMENTS........................Establish global styles
+ * .....Main
+ * .....Headings
+ * .....Text-related elements (p, blockquote, lists)
+ * .....Defaults
+ * .....Breakpoints
+ * PAGE STRUCTURE........................Grid Styles
+ * .....Footer
+ * .....Header
+ * .....Main
+ * .....Nav
+ * TOC To Be Continued
+ */
+
+
+
 @import "compass";
-@import "base/colors";
-@import "base/normalize";
-@import "base/base";
-@import "tools/helpers";
+@import "generic/variables";
+@import "generic/mixins";
+@import "generic/normalize";
+@import "generic/helpers";
+
+
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
+\*------------------------------------*/
+@import "base/global-classes";
+
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+@import "objects/header";
+@import "objects/nav";
+@import "objects/main";
+@import "objects/footer";
+
+
+
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+@import "objects/text";
+
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+
+
+
+
